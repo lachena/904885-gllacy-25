@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Алена Ордякова](https://up.htmlacademy.ru/htmlcss/25/user/904885).
-* Наставник: `Неизвестно`.
+* Наставник: [Ксюша Шанникова](https://htmlacademy.ru/profile/ksenia-ok).
 
 ---
 
