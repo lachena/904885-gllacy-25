@@ -6,13 +6,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:
     300,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
     <header class="main-header">   
       <nav class="main-navigation">
-        <img src="img/logo.svg" width="155" height="67" alt="Логотип Глейси">
+        <img class="main-logo" src="img/logo.svg" width="155" height="67" alt="Логотип Глейси">
         <ul class="site-navigation">
           <li><a href="catalog.html" class="site-navigation-current">Каталог</a>
             <ul class="navigation-item">
@@ -29,17 +29,21 @@
         <ul class="user-navigation">
           <li>
             <a class="search-field" href="popap-search">
-              <img src="img/loupe.svg" width="17px" height="17px" alt="Поиск">
+              <img src="img/loupe.svg" width="17" height="17" alt="Поиск">
+              Поиск
             </a>
           </li>
           <li>
             <a class="login-link" href="#">
-              <!--<img src="img/entrance.svg" width="21px" height="19px" alt="Вход">-->
+              <img src="img/entrance.svg" width="21" height="19" alt="Вход">
               Вход
             </a>
           </li>
           <li>
-            <a class="basket" href="#">Корзина</a>
+            <a class="basket" href="#">
+              <img src="img/basket.svg" width="21" height="20" alt="Корзина">
+              Пусто
+            </a>
           </li>
         </ul>
       </nav>
@@ -49,6 +53,7 @@
             <a class="phone" href="88124502525">8 812 450-25-25</a>
           </p>
       </div>
+      <!--Попапы header-->
       <div id="popap-search" class="search-popap">
           <form class="search-popap-form" action="URL" method="post">
             <p class="search-item">
@@ -70,20 +75,21 @@
                 <input class="password-area" type="text" id="login-password" 
                 name="password" value="" placeholder="Пароль">
               </p>
-              <button class="button-gl" type="submit">Войти</button>
+              <button class="button-gl button-login-link" type="submit">Войти</button>
               <a class="restore" href="#">Забыли пароль?</a>
               <a class="new-registration" href="#">Новая регистрация</a>
             </form>
           </div>
     </header>
-
+<!--MAIN-->
     <main class="container"> 
       <h1 class="visually-hidden">Мороженое Глейси</h1>
 
       <section class="features">
         <h2 class="visually-hidden">Характеристики</h2>
-        <b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже 
-          мороженого собственного производства на развес</b>
+        <div class="features-area">
+          <p class="features-header">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже 
+          мороженого собственного производства на развес</p>
         <ul class="features-list">  
           <li class="feature-item">
             <img src="img/ice-cream.svg" width="50" height="50" alt="Мороженое">
@@ -110,18 +116,32 @@
               позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
+      </div>
       </section>
       <article class="news">
         <h2>Новое в нашем блоге</h2>
-        <a href="#">10 способов сервировки фрутовых щербетов к столу</a>
+        <a class="news-link" href="#">10 способов сервировки фрутовых 
+          щербетов к столу</a>
       </article>
       <section class="apointment">
         <h2 class="visually-hidden">Подписка</h2>
-        <p class="appointment-info"> 
-            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе 
-            всего самого вкусного, что у нас происходит. Обещаем не спамить и 
-            не слать всякой ненужной ерунды. Честно =) 
-        </p>
+        <div class="appointment-field">
+          <div class="appointment-field2">
+             <p class="appointment-info"> 
+              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе 
+              всего самого вкусного, что у нас происходит. Обещаем не спамить и 
+              не слать всякой ненужной ерунды. Честно =) 
+            </p>
+            <form class="appointment-form" action="URL" method="post">
+              <p class="appointment-item">
+                <label class="visually-hidden" for="appointment-email">Электронная почта</label>
+                <input class="appointment-area" id="appointment-email" type="text" 
+                name="email" value="" placeholder="Электронная почта">
+              </p>
+              <button class="button-gl button-email" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Как добраться</h2>
@@ -129,27 +149,22 @@
           <img src="img/map.jpg" width="1200" height="430" 
           alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </p>
-        <p>
-          Адрес главного офиса<br> и офлайн-магазина:
-          <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-        </p>
-        <p>
-          Для заказов по телефону:<br>
-          <b>8 812 450-25-25</b><br>
-          (с 10 до 20 ежедневно)
-        </p>
-        <a class="feedback" href="#">Форма обратной связи</a>
-      </section>
-      <div class="appointment-popap">
-          <form class="appointment-form" action="URL" method="post">
-            <p class="appointment-item">
-              <label class="visually-hidden" for="appointment-email">Электронная почта</label>
-              <input class="appointment-area" id="appointment-email" type="text" 
-              name="email" value="" placeholder="Электронная почта">
-            </p>
-            <button class="button-gl" type="submit">Отправить</button>
-          </form>
+        <div class="map-adress">
+          <p>
+            Адрес главного офиса<br> 
+            и офлайн-магазина:<br>
+            <b>ул. Большая Конюшенная<br>
+            19/8, Санкт-Петербург</b>
+          </p>
+          <p>
+            Для заказов по телефону:<br>
+            <b>8 812 450-25-25</b><br>
+            (с 10 до 20 ежедневно)
+          </p>
+          <a class="feedback" href="#">Форма обратной связи</a>
         </div>
+      </section>
+      <!--Попапы main-->
         <div class="feedback-field">
             <form class="feedback-form" action="URL" method="POST">
               <p>Мы обязательно вам ответим!</p>
@@ -168,19 +183,40 @@
                 <textarea id="feedback-textarea" rows="5" cols="45" 
                 name="feedback">Напишите что-нибудь...</textarea>
               </p>
-              <button class="button-gl" type="submit">Отправить</button>
+              <button class="button-gl button-feedback" type="submit">Отправить</button>
             </form>
           </div>
     </main>
-
+<!--FOOTER-->
     <footer class="main-footer">
       <div class="footer-social">
-        <a title="Твиттер" class="social-button" href="#">Твиттер</a>
-        <a title="Инстаграм" class="social-button" href="#">Инстаграм</a>
-        <a title="Фейсбук" class="social-button" href="#">Фейсбук</a>
-        <a title="Вконтакте" class="social-button" href="#">Вконтакте</a>
+        <p class="social-twitter">
+          <label class="visually-hidden" for="twitter">Твиттер</label>
+          <a id="twitter" title="Твиттер" class="social-button" href="#">
+            <img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
+          </a>
+        </p>
+        <p class="social-instagram">
+          <label class="visually-hidden" for="instagram">Инстаграм</label>
+          <a id="instagram" title="Инстаграм" class="social-button" href="#">
+            <img src="img/instagram.svg" width="32" height="32" alt="Инстаграм">
+          </a>
+        </p>
+        <p class="social-fb">
+          <label class="visually-hidden" for="fb">Фейсбук</label>
+          <a id="fb" title="Фейсбук" class="social-button" href="#">
+            <img src="img/fb.svg" width="32" height="32" alt="Фейсбук">
+          </a>
+        </p>
+        <p class="social-vk">
+          <label class="visually-hidden" for="vk">Вконтакте</label>
+          <a id="vk" title="Вконтакте" class="social-button" href="#">
+            <img src="img/vk.svg" width="32" height="32" alt="Вконтакте">
+          </a>
+        </p>
       </div>
       <div class="contacts">
+        <img src="img/heart.svg" width="15" height="13" alt="Сердце">
         <a href="#">Для поставщиков</a>
         <a href="#">О производстве</a>
         <a href="#">Наши документы</a>
@@ -190,8 +226,13 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright" title="HTML Academy">
           <img src="img/logo-htmlacademy.svg" width="106" height="37" 
           alt="Логотип HTML Academy">
-          <p>Сделано в HTML Academy © 2019</p>
         </a>
+        <p>Сделано в 
+          <a href="https://htmlacademy.ru/intensive/htmlcss" 
+          class="html" title="HTML Academy">HTML Academy</a> 
+          © 2019
+        </p>
+        
       </div>
     </footer>
   </body>
