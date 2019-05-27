@@ -18,7 +18,15 @@
           </div>
           <nav class="main-navigation">
             <ul class="site-navigation">
-                <li><a href="catalog.html" class="site-navigation-current">Каталог</a></li>
+                <li><a href="catalog.html" class="site-navigation-current">Каталог</a>
+                  <ul class="navigation-item">
+                    <li><a href="#">Новинки</a></li>
+                    <li><a href="#">Сливочное</a></li>
+                    <li><a href="#">Щербеты</a></li>
+                    <li><a href="#">Фруктовый лед</a></li>
+                    <li><a href="#">Мелорин</a></li>
+                  </ul>  
+                </li>
                 <li><a href="delivery.html">Доставка и оплата</a></li>
                 <li><a href="company.html">О Компании</a></li>
               </ul>
@@ -44,11 +52,12 @@
               </ul>
             </nav>
             <div class="main-time">
-                <p>
-                  <span>С 10 до 20, ежедневно</span>
-                  <a class="phone" href="88124502525">8 812 450-25-25</a>
-                </p>
-            </div>
+              <p>
+                <span class="time">С 10 до 20, ежедневно</span>
+                <a class="phone" href="88124502525">8 812 450-25-25</a>
+                  С 10 до 20, ежедневно<br>
+              </p>
+          </div>
             <!--КОРЗИНА-->
             <div class="basket-popap">
                 <form class="basket-form">
@@ -79,27 +88,9 @@
                     <p class="basket-price">450 руб.</p>
                   </div>
                   <p class="total"><b>Итого: 750 руб.</b></p>
-                  <button class="button-gl" type="submit">Оформить заказ</button>
+                  <button class="button-gl button-basket" type="submit">Оформить заказ</button>
                 </form>
               </div>
-              <li><a href="catalog.html" class="site-navigation-current">Каталог</a></li>
-              <li><a href="delivery.html">Доставка и оплата</a></li>
-              <li><a href="company.html">О Компании</a></li>
-            </ul>
-          </nav>
-          <div>
-            <ul class="user-navigation">
-              <li class="search-field">Поиск</li>
-              <li class="login-link">Вход</li>
-              <li class="basket">Корзина</li>
-            </ul>
-          </div>
-          <div class="main-time">
-            <p>
-                С 10 до 20, ежедневно<br>
-                <span>8 812 450-25-25</span>
-            </p>
-          </div>
         </header>
 <!--MAIN-->
         <main class="container">
@@ -351,26 +342,22 @@
 <footer class="main-footer">
     <div class="footer-social">
       <p class="social-twitter">
-        <label class="visually-hidden" for="twitter">Твиттер</label>
-        <a id="twitter" title="Твиттер" class="social-button" href="#">
+        <a title="Твиттер" class="social-button" href="#">
           <img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
         </a>
       </p>
       <p class="social-instagram">
-        <label class="visually-hidden" for="instagram">Инстаграм</label>
-        <a id="instagram" title="Инстаграм" class="social-button" href="#">
+        <a title="Инстаграм" class="social-button" href="#">
           <img src="img/instagram.svg" width="32" height="32" alt="Инстаграм">
         </a>
       </p>
       <p class="social-fb">
-        <label class="visually-hidden" for="fb">Фейсбук</label>
-        <a id="fb" title="Фейсбук" class="social-button" href="#">
+        <a title="Фейсбук" class="social-button" href="#">
           <img src="img/fb.svg" width="32" height="32" alt="Фейсбук">
         </a>
       </p>
       <p class="social-vk">
-        <label class="visually-hidden" for="vk">Вконтакте</label>
-        <a id="vk" title="Вконтакте" class="social-button" href="#">
+        <a title="Вконтакте" class="social-button" href="#">
           <img src="img/vk.svg" width="32" height="32" alt="Вконтакте">
         </a>
       </p>

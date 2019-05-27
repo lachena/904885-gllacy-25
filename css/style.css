@@ -201,6 +201,70 @@ a.new-registration {
     color: #323232;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+.basket-popap {
+    border-radius: 5px;
+    box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+    background-color: #f8f7f4;
+}
+p.total {
+    border-top: 1px solid black;
+}
+.button-close {
+    opacity: 0.2;
+}
+.basket-item img {
+    width: 33px;
+    height: 33px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+.basket-item .basket-name {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #323232;
+}
+.basket-item .basket-count {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #323232;
+}
+.basket-count span {
+    color: rgba(0, 0, 0, 0.5);
+}
+.basket-item .basket-price {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #323232;
+}
+p.total {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #323232;
+}
+.button-basket {
+    width: 170px;
+    height: 44px;
+}
 /* БЛОК HEADER конец */
 
 
