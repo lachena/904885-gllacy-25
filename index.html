@@ -4,64 +4,65 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:
-    300,700&display=swap&subset=cyrillic" rel="stylesheet">
+    300,500&display=swap&subset=cyrillic" rel="stylesheet" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
-    <header class="main-header">
-      <div class="main-logo">
-          <a class="logo" href="index.html">
-              <img src="img/logo.svg" width="155" height="67" alt="Логотип Глейси">
-              </a>
-      </div>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li><a href="catalog.html" class="site-navigation-current">Каталог</a>
-            <ul class="navigation-item">
-              <li><a href="#">Новинки</a></li>
-              <li><a href="#">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лед</a></li>
-              <li><a href="#">Мелорин</a></li>
-            </ul>
-          </li>
-          <li><a href="delivery.html">Доставка и оплата</a></li>
-          <li><a href="company.html">О Компании</a></li>
-        </ul>
-      </nav>
-      <div>
+    <header class="main-header main-container">
+
+      <div class="main-menu">
+        <div class="main-logo">
+          <img src="img/logo.svg" width="155" height="67" alt="Логотип Глейси">
+        </div>
+
+        <nav class="main-navigation">
+          <ul class="site-navigation">
+            <li><a href="catalog.html" class="site-navigation-current site-navigation-link">Каталог</a>
+              <ul class="navigation-item visually-hidden">
+                <li><a class="navigation-item-link" href="#">Новинки</a></li>
+                <li><a class="navigation-item-link" href="#">Сливочное</a></li>
+                <li><a class="navigation-item-link" href="#">Щербеты</a></li>
+                <li><a class="navigation-item-link" href="#">Фруктовый лед</a></li>
+                <li><a class="navigation-item-link" href="#">Мелорин</a></li>
+              </ul>
+            </li>
+            <li><a class="site-navigation-link" href="delivery.html">Доставка и оплата</a></li>
+            <li><a class="site-navigation-link" href="company.html">О Компании</a></li>
+          </ul>
+        </nav>
+
         <ul class="user-navigation">
           <li>
-            <a class="search-field" href="popap-search">
+            <a class="search-field user-navigation-link search-link" href="popap-search">
               <img src="img/loupe.svg" width="17" height="17" alt="Поиск">
-              Поиск
+              
             </a>
           </li>
           <li>
-            <a class="login-link" href="#">
+            <a class="login-link user-navigation-link" href="#">
               <img src="img/entrance.svg" width="21" height="19" alt="Вход">
               Вход
             </a>
           </li>
           <li>
-            <a class="basket" href="#">
+            <a class="basket user-navigation-link" href="#">
               <img src="img/basket.svg" width="21" height="20" alt="Корзина">
               Пусто
             </a>
           </li>
-        </ul>
+        </ul>  
       </div>
+
       <div class="main-time">
-          <p>
-            <span class="time">С 10 до 20, ежедневно</span>
-            <a class="phone" href="88124502525">8 812 450-25-25</a>
-              С 10 до 20, ежедневно<br>
-          </p>
+          <p class="time">С 10 до 20, ежедневно</p>
+          <a class="phone" href="88124502525">8 812 450-25-25</a>
       </div>
+
+
       <!--Попапы header-->
-      <div id="popap-search" class="search-popap">
+      <div id="popap-search" class="search-popap visually-hidden">
           <form class="search-popap-form" action="URL" method="post">
             <p class="search-item">
              <label class="visually-hidden" for="search-field">Поиск</label>
@@ -69,27 +70,29 @@
              name="search" value="" placeholder="Что ищем?">
             </p>
           </form>
-        </div>
-        <div class="login-link-popap">
-            <form class="login-popap-form" action="URL" method="post"> 
-              <p class="login-link-item"> 
-                <label class="visually-hidden" for="login-email">Электронная почта</label>
-                <input class="login-area" type="text" id="login-email" 
-                name="login" value="" placeholder="Электронная почта">
-              </p>
-              <p class="login-link-item">
-                <label class="visually-hidden" for="login-password">Пароль</label>
-                <input class="password-area" type="text" id="login-password" 
-                name="password" value="" placeholder="Пароль">
-              </p>
-              <button class="button-gl button-login-link" type="submit">Войти</button>
-              <a class="restore" href="#">Забыли пароль?</a>
-              <a class="new-registration" href="#">Новая регистрация</a>
-            </form>
-          </div>
+      </div>
+      <div class="login-link-popap visually-hidden">
+          <form class="login-popap-form" action="URL" method="post"> 
+            <p class="login-link-item"> 
+              <label class="visually-hidden" for="login-email">Электронная почта</label>
+              <input class="login-area" type="text" id="login-email" 
+              name="login" value="" placeholder="Электронная почта">
+            </p>
+            <p class="login-link-item">
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input class="password-area" type="text" id="login-password" 
+              name="password" value="" placeholder="Пароль">
+            </p>
+            <button class="button-gl button-login-link" type="submit">Войти</button>
+            <a class="restore" href="#">Забыли пароль?</a>
+            <a class="new-registration" href="#">Новая регистрация</a>
+          </form>
+      </div>
     </header>
+
+
 <!--MAIN-->
-    <main class="container"> 
+    <main class="features-container main-container"> 
       <h1 class="visually-hidden">Мороженое Глейси</h1>
 
       <section class="features">
@@ -100,57 +103,64 @@
         <ul class="features-list">  
           <li class="feature-item">
             <img src="img/ice-cream.svg" width="50" height="50" alt="Мороженое">
-            <p>Все наше мороженое изготавливается на собственном производстве, 
+            <p class="features-text">Все наше мороженое изготавливается на собственном производстве, 
               с использованием современного оборудования и проверенных 
               временем технологий.</p>
           </li>
           <li class="feature-item">
-            <img src="img/eco.svg" width="50" height="50" alt="Эко">
-            <p>Для приготовления мороженого используются настоящие сливки и 
-              молоко высочайшего качества. Все дополнительные ингредиенты и 
-              добавки произведены из натурального, экологически чистого сырья.</p>
-          </li>
-          <li class="feature-item">
             <img src="img/cow.svg" width="50" height="50" alt="Корова">
-            <p>Закупка ингредиентов  производится только у проверенных фермерских 
+            <p class="features-text">Закупка ингредиентов  производится только у проверенных фермерских 
               хозяйств и компаний, с которыми нас связывает долговременное 
               сотрудничество.</p>
           </li>
           <li class="feature-item">
+            <img src="img/eco.svg" width="50" height="50" alt="Эко">
+            <p class="features-text">Для приготовления мороженого используются настоящие сливки и 
+              молоко высочайшего качества. Все дополнительные ингредиенты и 
+              добавки произведены из натурального, экологически чистого сырья.</p>
+          </li>
+          <li class="feature-item">
             <img src="img/thermometer.svg" width="50" height="50" alt="Термометр">
-            <p>Доставка нашего мороженого до заказчиков осуществляется в с
+            <p class="features-text">Доставка нашего мороженого до заказчиков осуществляется в с
               пециальном термопаке, который не дает мороженому растаять в пути и 
               позволяет сохранить превосходный вкус.</p>
           </li>   
         </ul>
       </div>
       </section>
-      <article class="news">
-        <h2>Новое в нашем блоге</h2>
-        <a class="news-link" href="#">10 способов сервировки фрутовых 
-          щербетов к столу</a>
-      </article>
-      <section class="apointment">
-        <h2 class="visually-hidden">Подписка</h2>
-        <div class="appointment-field">
-          <div class="appointment-field2">
-             <p class="appointment-info"> 
-              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе 
-              всего самого вкусного, что у нас происходит. Обещаем не спамить и 
-              не слать всякой ненужной ерунды. Честно =) 
-            </p>
-            <form class="appointment-form" action="URL" method="post">
-              <p class="appointment-item">
-                <label class="visually-hidden" for="appointment-email">Электронная почта</label>
-                <input class="appointment-area" id="appointment-email" type="text" 
-                name="email" value="" placeholder="Электронная почта">
-              </p>
-              <button class="button-gl button-email" type="submit">Отправить</button>
-            </form>
+
+      <div class="news-appointment-wrapper">
+        <article class="news">
+          <h2 class="news-header">Новое в нашем блоге</h2>
+          <div class="news-link-wrapper">
+              <a  class="news-link" href="#">10 способов сервировки фрутовых 
+                  щербетов к столу</a>
           </div>
-        </div>
-      </section>
-      <section class="map">
+        </article>
+
+        <section class="appointment">
+          <h2 class="visually-hidden">Подписка</h2>
+          <div class="appointment-field">
+            <div class="appointment-field2">
+              <p class="appointment-info"> 
+                Подпишитесь на нашу сладкую рассылку и будете всегда в курсе 
+                всего самого вкусного, что у нас происходит. Обещаем не спамить и 
+                не слать всякой ненужной ерунды. Честно =) 
+              </p>
+              <form class="appointment-form" action="URL" method="post">
+                <p class="appointment-item">
+                  <label class="visually-hidden" for="appointment-email">Электронная почта</label>
+                  <input class="appointment-area" id="appointment-email" type="text" 
+                  name="email" value="" placeholder="Электронная почта">
+                </p>
+                <button class="button-gl button-email" type="submit">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>  
+
+      <section class="map visually-hidden">
         <h2 class="visually-hidden">Как добраться</h2>
         <p>
           <img src="img/map.jpg" width="1200" height="430" 
@@ -168,11 +178,14 @@
             <b>8 812 450-25-25</b><br>
             (с 10 до 20 ежедневно)
           </p>
-          <a class="feedback" href="#">Форма обратной связи</a>
+          <a class="map-feedback" href="#">Форма обратной связи</a>
         </div>
       </section>
+
+
+
       <!--Попапы main-->
-        <div class="feedback-field">
+        <div class="feedback-field visually-hidden">
             <form class="feedback-form" action="URL" method="POST">
               <p>Мы обязательно вам ответим!</p>
               <p class="feedback-item">
@@ -194,48 +207,62 @@
             </form>
           </div>
     </main>
+
+
+
 <!--FOOTER-->
-    <footer class="main-footer">
-      <div class="footer-social">
-        <p class="social-twitter">
-          <a title="Твиттер" class="social-button" href="#">
-            <img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
+    <footer class="main-footer main-container">
+
+      <div class="footer-wrapper">
+
+        <div class="footer-social">
+          <p class="social-space">
+            <a title="Твиттер" class="social-button" href="#">
+              <img src="img/twitter.svg" width="32" height="32" alt="Твиттер">
+            </a>
+          </p>
+          <p class="social-space">
+            <a title="Инстаграм" class="social-button" href="#">
+              <img src="img/instagram.svg" width="32" height="32" alt="Инстаграм">
+            </a>
+          </p>
+          <p class="social-space">
+            <a title="Фейсбук" class="social-button" href="#">
+              <img src="img/fb.svg" width="32" height="32" alt="Фейсбук">
+            </a>
+          </p>
+          <p class="social-space">
+            <a title="Вконтакте" class="social-button" href="#">
+              <img src="img/vk.svg" width="32" height="32" alt="Вконтакте">
+            </a>
+          </p>
+        </div>
+
+        <div class="contacts">
+          <div class="contacts-image">
+              <img src="img/heart.svg" width="15" height="13" alt="Сердце">
+          </div>
+          <div class="contacts-link-wrapper">
+              <a class="contacts-link" href="#">Для поставщиков</a>
+              <a class="contacts-link" href="#">Наши документы</a>
+              <a class="contacts-link" href="#">О производстве</a>
+              <a class="contacts-link" href="#">Экологические стандарты</a>
+          </div>
+          
+        </div>
+
+        <div class="footer-copyright">
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright" title="HTML Academy">
+            <img src="img/logo-htmlacademy.svg" width="106" height="37" 
+            alt="Логотип HTML Academy">
           </a>
-        </p>
-        <p class="social-instagram">
-          <a title="Инстаграм" class="social-button" href="#">
-            <img src="img/instagram.svg" width="32" height="32" alt="Инстаграм">
-          </a>
-        </p>
-        <p class="social-fb">
-          <a title="Фейсбук" class="social-button" href="#">
-            <img src="img/fb.svg" width="32" height="32" alt="Фейсбук">
-          </a>
-        </p>
-        <p class="social-vk">
-          <a title="Вконтакте" class="social-button" href="#">
-            <img src="img/vk.svg" width="32" height="32" alt="Вконтакте">
-          </a>
-        </p>
-      </div>
-      <div class="contacts">
-        <img src="img/heart.svg" width="15" height="13" alt="Сердце">
-        <a href="#">Для поставщиков</a>
-        <a href="#">О производстве</a>
-        <a href="#">Наши документы</a>
-        <a href="#">Экологические стандарты</a>
-      </div>
-      <div class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="copyright" title="HTML Academy">
-          <img src="img/logo-htmlacademy.svg" width="106" height="37" 
-          alt="Логотип HTML Academy">
-        </a>
-        <p>Сделано в 
-          <a href="https://htmlacademy.ru/intensive/htmlcss" 
-          class="html" title="HTML Academy">HTML Academy</a> 
-          © 2019
-        </p>
-        
+          <p class="copyright-html">Сделано в 
+            <a href="https://htmlacademy.ru/intensive/htmlcss" 
+            class="html" title="HTML Academy">HTML Academy</a> 
+            © 2019
+          </p>
+          
+        </div>
       </div>
     </footer>
   </body>
