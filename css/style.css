@@ -571,7 +571,7 @@ a {
 
 
 /*СТИЛИ ДЛЯ СЕТКИ*/
-
+/*
 body > * {
     background: rgba(63, 48, 197, 0.3)
 }
@@ -662,10 +662,13 @@ html {
 }
 .features,
 .news-appointment-wrapper,
-.footer-wrapper, {
+.footer-wrapper,
+.main-menu,
+.main-time {
     margin-left: 27px;
     margin-right: 27px;
 }
+
 .features {
     margin-bottom: 40px;
 }
@@ -799,15 +802,18 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-left: 27px;
 }
 .breadcrumbs-item {
     margin: 0;
     padding: 0;
+    margin-right: 10px;
 }
 .page-title {
     margin: 0;
     padding: 0;
     margin-bottom: 200px;
+    margin-left: 27px;
 }
 .catalog-list {
     display: flex;
