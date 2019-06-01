@@ -203,7 +203,7 @@ a {
     text-align: left;
     color: #323232;
 }
-.basket-count span {
+.basket-count-price {
     color: rgba(0, 0, 0, 0.5);
 }
 .basket-item .basket-price {
@@ -230,11 +230,11 @@ a {
     width: 170px;
     height: 44px;
 }
-/* БЛОК HEADER конец */
+/* HEADER end */
 
 
 
-/* БЛОК MAIN начало */
+/* MAIN start */
 .features-container {
     font-size: 16px;
     font-weight: normal;
@@ -304,7 +304,7 @@ a {
     background-repeat: no-repeat;
     background-position: 0 0;
 }
-.news h2{
+.news-header{
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
@@ -442,7 +442,7 @@ a {
     color: #fefefe;
     text-align: center;
 }
-/*блок main catalog НАЧАЛО*/
+/* main catalog START*/
 .breadcrumbs,
 .catalog-list  {
     list-style: none;
@@ -525,13 +525,13 @@ a {
     color: #fefefe;
 }
 
-/*блок main catalog КОНЕЦ*/
-/* БЛОК MAIN конец */
+/*  main catalog END*/
+/* MAIN end */
 
 
 
-/* БЛОК FOOTER начало */
-.footer-social img {
+/* FOOTER start */
+.footer-social-image {
     border: 3px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
 }
@@ -570,7 +570,7 @@ a {
 }
 
 
-/*СТИЛИ ДЛЯ СЕТКИ*/
+/* STYLES for grid*/
 /*
 body > * {
     background: rgba(63, 48, 197, 0.3)
@@ -592,17 +592,17 @@ body {
     background-repeat: no-repeat;
   }
 */
+/*
 body,
 html {
     min-width: 1200px;
     min-height: 2416px;
 }
-
+*/
 .main-container {
     max-width: 1200px;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    margin-left: 28px;
 }
 .main-menu {
     display: flex;
@@ -615,13 +615,12 @@ html {
     min-width: 155px;
 }
 .main-navigation {
-    background-color: transparent;
-    width: calc(100%-455px);
+    width: calc(100% - 455px);
 }
 .site-navigation {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
 }
@@ -750,7 +749,7 @@ html {
     align-items: center;
 }
 .features-container {
-    /*временно*/
+    /*temporarily*/
     margin-bottom: 500px;
 }
 
@@ -795,7 +794,7 @@ html {
 .copyright-html {
     font-size: 12px;
 }
-/*стили для каталога*/
+/* styles for catalog*/
 .breadcrumbs {
     margin: 0;
     padding: 0;
@@ -803,6 +802,7 @@ html {
     flex-direction: row;
     align-items: center;
     margin-left: 27px;
+    
 }
 .breadcrumbs-item {
     margin: 0;
@@ -848,7 +848,7 @@ html {
 .catalog-item-price {
     position: relative;
     z-index: 2;
-    top: -65px; /* Сдвигаем текст вверх */
+    top: -65px;
     left: 5px;
 }
 .catalog-item-title {
