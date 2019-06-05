@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,500&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    
+
 <!--HEADER-->
   <header class="main-header main-container">
 
@@ -53,8 +53,8 @@
                 </li>
                 <li class="user-navigation-item">
                   <a class="basket user-navigation-link" href="#">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
-                    Пусто</a>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
+                    2 товара</a>
                 </li>
           </ul>
         
@@ -66,7 +66,7 @@
       <form class="basket-form">
         <div class="basket-item">
           <button class="button-close" type="reset" >X</button>
-          <img src="img/product-1.jpg" width="34" height="34" 
+          <img src="img/product-1.png" width="34" height="34" 
           alt="Клубничный пломбир с присыпкой из белого шоколада">
           <p class="basket-name">
             Пломбир с апельсиновым джемом
@@ -79,7 +79,7 @@
         </div>
         <div class="basket-item">
           <button class="button-close" type="reset" >X</button>
-          <img src="img/product-3.jpg" width="34" height="34" 
+          <img src="img/product-3.png" width="34" height="34" 
           alt="Клубничный пломбир с присыпкой из белого шоколада">
           <p class="basket-name">
             Клубничный пломбир с присыпкой из белого шоколада
@@ -136,7 +136,7 @@
               </p>
             </a>
             <p class="catalog-item-price">
-              <b>310 ₽</b><span>/кг</span>
+              <b>310</b><span class="rub">₽</span><span class="kg">/кг</span>
             </p>
             <a href="catalog-item.html">
                 <h3 class="catalog-title">
@@ -145,7 +145,7 @@
                   </span>
                 </h3>
               </a>
-            <button class="button-gl button-item visually-hidden">Быстрый просмотр</button>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li>  
 
           <li class="catalog-item">
@@ -156,7 +156,7 @@
               </p>
             </a>
             <p class="catalog-item-price">
-                <b>380 ₽</b><span>/кг</span>
+                <b>380</b><span class="rub">₽</span><span class="kg">/кг</span>
             </p>
             <a href="catalog-item.html">
                 <h3 class="catalog-title">
@@ -175,7 +175,7 @@
               </p>
             </a>
             <p class="catalog-item-price">
-                <b>355 ₽</b><span>/кг</span>
+                <b>355</b><span class="rub">₽</span><span class="kg">/кг</span>
             </p>
             <a href="catalog-item.html">
                 <h3 class="catalog-title">
@@ -194,7 +194,7 @@
               </p>
             </a>
             <p class="catalog-item-price">
-                <b>415 ₽</b><span>/кг</span>
+                <b>415</b><span class="rub">₽</span><span class="kg">/кг</span>
             </p>
             <a href="catalog-item.html">
                 <h3 class="catalog-title">
@@ -213,7 +213,7 @@
               </p>
             </a>
             <p class="catalog-item-price">
-              <b>325 ₽</b><span>/кг</span>
+              <b>325</b><span class="rub">₽</span><span class="kg">/кг</span>
             </p>
             <a href="catalog-item.html">
               <h3 class="catalog-title">
@@ -232,7 +232,7 @@
               </p>
             </a>
             <p class="catalog-item-price">
-              <b>410 ₽</b><span>/кг</span>
+              <b>410</b><span class="rub">₽</span><span class="kg">/кг</span>
             </p>
             <a href="catalog-item.html">
               <h3 class="catalog-title">
@@ -251,7 +251,7 @@
               </p>
             </a>
             <p class="catalog-item-price">
-              <b>375 ₽</b><span>/кг</span>
+              <b>375</b><span class="rub">₽</span><span class="kg">/кг</span>
             </p>
             <a href="catalog-item.html">
               <h3 class="catalog-title">
@@ -270,7 +270,7 @@
               </p>
             </a>
             <p class="catalog-item-price">
-              <b>320 ₽</b><span>/кг</span>
+              <b>320</b><span class="rub">₽</span><span class="kg">/кг</span>
             </p>
             <a href="catalog-item.html">
               <h3 class="catalog-title">
@@ -289,7 +289,7 @@
               </p>
             </a>
             <p class="catalog-item-price">
-              <b>440 ₽</b><span>/кг</span>
+              <b>440</b><span class="rub">₽</span><span class="kg">/кг</span>
             </p>
             <a href="catalog-item.html">
               <h3 class="catalog-title">
@@ -308,7 +308,7 @@
               </p>
             </a>
             <p class="catalog-item-price">
-              <b>435 ₽</b><span>/кг</span>
+              <b>435</b><span class="rub">₽</span><span class="kg">/кг</span>
             </p>
             <a href="catalog-item.html">
               <h3 class="catalog-title">
@@ -327,7 +327,7 @@
               </p>
             </a>
             <p class="catalog-item-price">
-              <b>355 ₽</b><span>/кг</span>
+              <b>355</b><span class="rub">₽</span><span class="kg">/кг</span>
             </p>
             <a href="catalog-item.html">
               <h3 class="catalog-title">
@@ -346,7 +346,7 @@
               </p>
             </a>
             <p class="catalog-item-price">
-              <b>420 ₽</b><span>/кг</span>
+              <b>420</b><span class="rub">₽</span><span class="kg">/кг</span>
             </p>
             <a href="catalog-item.html">
               <h3 class="catalog-title">
