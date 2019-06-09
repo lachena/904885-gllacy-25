@@ -18,22 +18,23 @@
             <img src="img/logo.svg" width="155" height="67" alt="Логотип Глейси">
           </a>
         </div>
-
-        <nav class="main-navigation">
-          <ul class="site-navigation">
-            <li class="site-navigation-item"><a href="catalog.html" class="site-navigation-current site-navigation-link">Каталог</a>
-              <ul class="navigation-list">
-                <li class="navigation-item"><a class="navigation-item-link" href="#">Новинки</a></li>
-                <li class="navigation-item"><a class="navigation-item-link" href="#">Сливочное</a></li>
-                <li class="navigation-item"><a class="navigation-item-link" href="#">Щербеты</a></li>
-                <li class="navigation-item"><a class="navigation-item-link" href="#">Фруктовый лед</a></li>
-                <li class="navigation-item"><a class="navigation-item-link" href="#">Мелорин</a></li>
-              </ul>  
-            </li>
-            <li class="site-navigation-item"><a class="site-navigation-link" href="delivery.html">Доставка и оплата</a></li>
-            <li class="site-navigation-item"><a class="site-navigation-link" href="company.html">О Компании</a></li>
-          </ul>
-        </nav>
+        
+        <div class="main-menu-wrapper">
+          <nav class="main-navigation">
+            <ul class="site-navigation">
+              <li class="site-navigation-item"><a href="catalog.html" class="site-navigation-current site-navigation-link site-navigation-catalog">Каталог</a>
+                <ul class="navigation-list">
+                  <li class="navigation-item"><a class="navigation-item-link" href="#">Новинки</a></li>
+                  <li class="navigation-item"><a class="navigation-item-link" href="#">Сливочное</a></li>
+                  <li class="navigation-item"><a class="navigation-item-link" href="#">Щербеты</a></li>
+                  <li class="navigation-item"><a class="navigation-item-link" href="#">Фруктовый лед</a></li>
+                  <li class="navigation-item"><a class="navigation-item-link" href="#">Мелорин</a></li>
+                </ul>  
+              </li>
+              <li class="site-navigation-item"><a class="site-navigation-link site-navigation-delivery" href="delivery.html">Доставка и оплата</a></li>
+              <li class="site-navigation-item"><a class="site-navigation-link site-navigation-company" href="company.html">О Компании</a></li>
+            </ul>
+          </nav>
 
           <ul class="user-navigation">
               <li class="user-navigation-item">
@@ -57,52 +58,51 @@
                     2 товара</a>
                 </li>
           </ul>
-        
+        </div>
       </div>
-      
+      <div class="main-time">
+        <p class="time">С 10 до 20, ежедневно</p>
+        <a class="phone" href="88124502525">8 812 450-25-25</a>
+      </div>
 
-<!--BASKET-->
-    <div class="basket-popap visually-hidden">
-      <form class="basket-form">
-        <div class="basket-item">
-          <button class="button-close" type="reset" >X</button>
-          <img src="img/product-1.png" width="34" height="34" 
-          alt="Клубничный пломбир с присыпкой из белого шоколада">
-          <p class="basket-name">
-            Пломбир с апельсиновым джемом
-          </p>
-          <p class="basket-count">
-            1,5 кг х
-            <span class="basket-count-price">200 руб.</span>
-          </p>
-          <p class="basket-price">300 руб.</p>
+
+    <!--BASKET-->
+    <div class="basket-popap">
+        <ul class="basket-list">
+            
+          <li class="basket-item">
+            <button class="basket-button-close" type="reset" >X</button>
+            <a class="basket-item-pic" href="#"><img class="basket-pic" src="img/product-1.png" width="34" height="34" 
+            alt="Пломбир с апельсиновым джемом"></a>
+            <div class="basket-item-name"><h3 class="basket-name">Пломбир с апельсиновым джемом</h3></div>
+            <div class="basket-item-count"><span class="basket-count">1,5 кг х<b>200 руб.</b></span></div>
+            <div class="basket-item-price"><span class="basket-price">300 руб.</span></div>
+          </li>
+
+          <li class="basket-item">
+              <button class="basket-button-close" type="reset" >X</button>
+              <a class="basket-item-pic" href="#"><img class="basket-pic" src="img/product-3.png" width="34" height="34" 
+              alt="Клубничный пломбир с присыпкой из белого шоколада"></a>
+              <div class="basket-item-name"><h3 class="basket-name">Клубничный пломбир с присыпкой из белого шоколада</h3></div>
+              <div class="basket-item-count"><span class="basket-count">1,5 кг х<b>300 руб.</b></span></div>
+              <div class="basket-item-price"><span class="basket-price">450 руб.</span></div>
+          </li>
+          </ul>
+          
+         <div class="basket-total-wrapper">
+          <div class="total"><b>Итого: 750 руб.</b></div>
+          <button class="button-gl button-basket" type="submit">Оформить заказ</button>
         </div>
-        <div class="basket-item">
-          <button class="button-close" type="reset" >X</button>
-          <img src="img/product-3.png" width="34" height="34" 
-          alt="Клубничный пломбир с присыпкой из белого шоколада">
-          <p class="basket-name">
-            Клубничный пломбир с присыпкой из белого шоколада
-          </p>
-          <p class="basket-count">
-            1,5 кг х
-            <span class="basket-count-price">300 руб.</span>
-          </p>
-          <p class="basket-price">450 руб.</p>
-        </div>
-        <p class="total"><b>Итого: 750 руб.</b></p>
-        <button class="button-gl button-basket" type="submit">Оформить заказ</button>
-      </form>
-    </div>
+      </div>
 
   </header>
 
 
 
 <!--MAIN-->
-  <main class="catalog-container main-container">
-    <div class="catalog-wrapper">
-      <div class="breadcrumbs-time-wrapper"> 
+  <main class="catalog-container">
+    <div class="catalog-wrapper main-container">
+      <div class="breadcrumbs-wrapper"> 
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item"><a class="breadcrumbs-menu breadcrumbs-main" href="index.html">Главная</a></li>
           <li class="breadcrumbs-item">&raquo;</li>
@@ -110,10 +110,7 @@
           <li class="breadcrumbs-item">&raquo;</li>
           <li class="breadcrumbs-current breadcrumbs-item breadcrumbs-icecream">Сливочное</li>
         </ul>
-        <div class="main-time">
-          <p class="time">С 10 до 20, ежедневно</p>
-          <a class="phone" href="88124502525">8 812 450-25-25</a>
-        </div>
+        
       </div>
       
       <h1 class="page-title">Сливочное мороженое</h1>
@@ -139,12 +136,13 @@
               <b>310</b><span class="rub">₽</span><span class="kg">/кг</span>
             </p>
             <a href="catalog-item.html">
-                <h3 class="catalog-title">
-                  <span class="catalog-item-title">
-                    Сливочное с апельсиновым джемом и цитрусовой стружкой
-                  </span>
-                </h3>
-              </a>
+              <h3 class="catalog-title">
+                <span class="catalog-item-title">
+                  Сливочное с апельсиновым джемом и цитрусовой стружкой
+                </span>
+              </h3>
+            </a>
+            <div class="catalog-item-hover"></div>
             <button class="button-gl button-item">Быстрый просмотр</button>
           </li>  
 
@@ -164,7 +162,8 @@
                     кусочками шоколада</span>
                 </h3>
               </a>
-            <button class="button-gl button-item visually-hidden">Быстрый просмотр</button>
+              <div class="catalog-item-hover"></div>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li>  
 
           <li class="catalog-item">
@@ -183,7 +182,8 @@
                     присыпкой из белого шоколада</span>
                 </h3>
               </a>
-            <button class="button-gl button-item visually-hidden">Быстрый просмотр</button>
+              <div class="catalog-item-hover"></div>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li>
 
           <li class="catalog-item">
@@ -202,7 +202,8 @@
                     карамельной подливкой</span>
                 </h3>
               </a>
-            <button class="button-gl button-item visually-hidden">Быстрый просмотр</button>
+              <div class="catalog-item-hover"></div>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li>
 
           <li class="catalog-item">
@@ -221,7 +222,8 @@
                 джемом</span>
               </h3>
             </a>
-            <button class="button-gl button-item visually-hidden">Быстрый просмотр</button>
+            <div class="catalog-item-hover"></div>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li>
 
           <li class="catalog-item">
@@ -240,7 +242,8 @@
                 цельными ягодами черники</span>
               </h3>
             </a>
-            <button class="button-gl button-item visually-hidden">Быстрый просмотр</button>
+            <div class="catalog-item-hover"></div>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li> 
 
           <li class="catalog-item">
@@ -259,7 +262,8 @@
                 карамельной присыпкой</span>
               </h3>
             </a>
-            <button class="button-gl button-item visually-hidden">Быстрый просмотр</button>
+            <div class="catalog-item-hover"></div>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li>
 
           <li class="catalog-item">
@@ -278,7 +282,8 @@
                   стружкой</span>
               </h3>
             </a>
-            <button class="button-gl button-item visually-hidden">Быстрый просмотр</button>
+            <div class="catalog-item-hover"></div>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li>
 
           <li class="catalog-item">
@@ -297,7 +302,8 @@
                   кусочками шоколада</span>
               </h3>
             </a>
-            <button class="button-gl button-item visually-hidden">Быстрый просмотр</button>
+            <div class="catalog-item-hover"></div>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li>
 
           <li class="catalog-item">
@@ -316,7 +322,8 @@
                 сиропом</span>
               </h3>
             </a>
-            <button class="button-gl button-item visually-hidden">Быстрый просмотр</button>
+            <div class="catalog-item-hover"></div>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li>
 
           <li class="catalog-item">
@@ -335,7 +342,8 @@
                 черного шоколада</span>
               </h3>
             </a>
-            <button class="button-gl button-item visually-hidden">Быстрый просмотр</button>
+            <div class="catalog-item-hover"></div>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li> 
 
           <li class="catalog-item">
@@ -354,7 +362,8 @@
                 сиропом</span>
               </h3>
             </a>
-            <button class="button-gl button-item visually-hidden">Быстрый просмотр</button>
+            <div class="catalog-item-hover"></div>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li> 
         </ul>
       </section>
