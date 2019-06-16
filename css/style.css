@@ -1104,9 +1104,6 @@ img {
     margin: 0 auto;
     background-color: #849d8f;
 }
-.map-wrapper {
-    position: relative;
-}
 .map-adress {
     content: "";
     position: absolute;
@@ -1124,6 +1121,10 @@ img {
     color: #323232;
     background-color: #ffffff;
     border-radius: 15px;
+}
+.map-wrapper {
+    position: relative;
+    text-align: center;
 }
 .map-feedback {
     display: inline-block;
