@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,500&display=swap&subset=cyrillic" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:100,500&display=swap&subset=cyrillic" rel="stylesheet"> -->
     <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <div class="site-wrapper">
       <input class="visually-hidden radio-1" type="radio" id="product-1" name="toggle" checked>
       <input class="visually-hidden radio-2" type="radio" id="product-2" name="toggle">
       <input class="visually-hidden radio-3" type="radio" id="product-3" name="toggle">
+    <div class="site-wrapper">
+      
 <!--HEADER-->
     <header class="main-header main-container">
 
@@ -22,7 +23,15 @@
         <div class="main-menu-wrapper">
           <nav class="main-navigation">
             <ul class="site-navigation">
-              <li class="site-navigation-item"><a href="catalog.html" class="site-navigation-link site-navigation-catalog">Каталог</a></li>
+              <li class="site-navigation-item"><a href="#" class="site-navigation-link site-navigation-catalog">Каталог</a>
+                <ul class="navigation-list ">
+                  <li class="navigation-item navigation-item-first"><a class="navigation-item-link" href="#">Новинки</a></li>
+                  <li class="navigation-item"><a class="navigation-item-link" href="catalog.html">Сливочное</a></li>
+                  <li class="navigation-item"><a class="navigation-item-link" href="#">Щербеты</a></li>
+                  <li class="navigation-item"><a class="navigation-item-link" href="#">Фруктовый лед</a></li>
+                  <li class="navigation-item"><a class="navigation-item-link" href="#">Мелорин</a></li>
+                </ul>  
+              </li>
               <li class="site-navigation-item"><a class="site-navigation-link site-navigation-delivery" href="delivery.html">Доставка и оплата</a></li>
               <li class="site-navigation-item"><a class="site-navigation-link site-navigation-company" href="company.html">О Компании</a></li>
             </ul>
@@ -61,7 +70,7 @@
 
 
 <!--POPAP header-->
-      <div id="popap-search" class="search-popap visually-hidden">
+      <div id="popap-search" class="search-popap">
           <form class="search-popap-form" action="URL" method="post">
             <p class="search-item">
              <label class="visually-hidden" for="search-field">Поиск</label>
@@ -98,15 +107,15 @@
 <!--MAIN-->
     <main class="features-container"> 
       <h1 class="visually-hidden">Мороженое Глейси</h1>
-
+      <!-- <input class="visually-hidden radio-1" type="radio" id="product-1" name="toggle" checked>
+      <input class="visually-hidden radio-2" type="radio" id="product-2" name="toggle">
+      <input class="visually-hidden radio-3" type="radio" id="product-3" name="toggle"> -->
       <section class="slider main-container">
         <h2 class="visually-hidden">Слайдер</h2>
         <div class="slider-control">
-
-            <label for="product-1" class="slider-point">Первый</label>
-            <label for="product-2" class="slider-point">Второй</label>
-            <label for="product-3" class="slider-point">Третий</label>
-
+          <label for="product-1" class="slider-point">Первый</label>
+          <label for="product-2" class="slider-point">Второй</label>
+          <label for="product-3" class="slider-point">Третий</label>
         </div>
         <ul class="slider-list">
           <li class="slider-item slide" id="slide1">
@@ -139,7 +148,7 @@
                 бесплатно.
               </p>
               <div class="button-wrapper">
-                <button class="button-gl button-rasp" type="submit">Хочу варенье!</button>
+                <button class="button-gl button-action" type="submit">Хочу варенье!</button>
               </div>
               </section>
           </div>
@@ -153,7 +162,7 @@
                 бесплатно.
               </p>
               <div class="button-wrapper">
-              <button class="button-gl button-choco" type="submit">Хочу шоколадки!</button>
+              <button class="button-gl button-action" type="submit">Хочу шоколадки!</button>
               </div>
             </section>
           </div>
@@ -183,6 +192,8 @@
             <p class="hits-img-hit">
               <img src="img/hit.svg" alt="Хит" class="img-hit" width="61" height="61">
             </p>
+            <div class="hits-item-hover"></div>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li>
 
           <li class="hits-item">
@@ -204,6 +215,8 @@
             <p class="hits-img-hit">
                 <img src="img/hit.svg" alt="Хит" class="img-hit" width="61" height="61">
             </p>
+            <div class="hits-item-hover"></div>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li>
 
           <li class="hits-item">
@@ -225,6 +238,8 @@
             <p class="hits-img-hit">
                 <img src="img/hit.svg" alt="Хит" class="img-hit" width="61" height="61">
             </p>
+            <div class="hits-item-hover"></div>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li>
 
           <li class="hits-item">
@@ -246,6 +261,8 @@
             <p class="hits-img-hit">
                 <img src="img/hit.svg" alt="Хит" class="img-hit" width="61" height="61">
             </p>
+            <div class="hits-item-hover"></div>
+            <button class="button-gl button-item">Быстрый просмотр</button>
           </li>
         </ul>
       </section>
@@ -257,25 +274,25 @@
           мороженого собственного производства на развес</p>
         <ul class="features-list">  
           <li class="feature-item">
-            <img src="img/ice-cream.svg" width="50" height="50" alt="Мороженое">
+            <img class="feature-item-img" src="img/ice-cream.svg" width="50" height="50" alt="Мороженое">
             <p class="features-text">Все наше мороженое изготавливается на собственном производстве, 
               с использованием современного оборудования и проверенных 
               временем технологий.</p>
           </li>
           <li class="feature-item">
-            <img src="img/cow.svg" width="50" height="50" alt="Корова">
+            <img class="feature-item-img" src="img/cow.svg" width="50" height="50" alt="Корова">
             <p class="features-text">Закупка ингредиентов  производится только у проверенных фермерских 
               хозяйств и компаний, с которыми нас связывает долговременное 
               сотрудничество.</p>
           </li>
           <li class="feature-item">
-            <img src="img/eco.svg" width="50" height="50" alt="Эко">
+            <img class="feature-item-img" src="img/eco.svg" width="50" height="50" alt="Эко">
             <p class="features-text">Для приготовления мороженого используются настоящие сливки и 
               молоко высочайшего качества. Все дополнительные ингредиенты и 
               добавки произведены из натурального, экологически чистого сырья.</p>
           </li>
           <li class="feature-item">
-            <img src="img/thermometer.svg" width="50" height="50" alt="Термометр">
+            <img class="feature-item-img" src="img/thermometer.svg" width="50" height="50" alt="Термометр">
             <p class="features-text">Доставка нашего мороженого до заказчиков осуществляется в с
               пециальном термопаке, который не дает мороженому растаять в пути и 
               позволяет сохранить превосходный вкус.</p>
@@ -319,7 +336,7 @@
         <h2 class="visually-hidden">Как добраться</h2>
         <div class="map-wrapper">
         <p class="map-image">
-          <img src="img/map.jpg" width="1200" height="430" 
+          <img src="img/map.jpg" width="100%" 
           alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург">
         </p>
         <ul class="map-adress">
@@ -335,7 +352,7 @@
             <span class="adress-normal">(с 10 до 20 ежедневно)</span>
           </li>
           <li class="adress">
-            <a class="map-feedback" href="#">Форма обратной связи</a>
+            <a class="map-feedback button-gl" href="#">Форма обратной связи</a>
         </li>
         </ul>
         <p class="map-ice-cream">
@@ -428,6 +445,6 @@
         </div>
       </div>
     </footer>
-  </div>
+    </div>
   </body>
 </html>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-
+    <div class="site-wrapper">
 <!--HEADER-->
   <header class="main-header main-container">
 
@@ -22,10 +22,10 @@
         <div class="main-menu-wrapper">
           <nav class="main-navigation">
             <ul class="site-navigation">
-              <li class="site-navigation-item"><a href="catalog.html" class="site-navigation-current site-navigation-link site-navigation-catalog">Каталог</a>
-                <ul class="navigation-list visually-hidden">
+              <li class="site-navigation-item"><a href="#" class="site-navigation-current site-navigation-link site-navigation-catalog">Каталог</a>
+                <ul class="navigation-list ">
                   <li class="navigation-item navigation-item-first"><a class="navigation-item-link" href="#">Новинки</a></li>
-                  <li class="navigation-item"><a class="navigation-item-link" href="#">Сливочное</a></li>
+                  <li class="navigation-item"><a class="navigation-item-link" href="catalog.html">Сливочное</a></li>
                   <li class="navigation-item"><a class="navigation-item-link" href="#">Щербеты</a></li>
                   <li class="navigation-item"><a class="navigation-item-link" href="#">Фруктовый лед</a></li>
                   <li class="navigation-item"><a class="navigation-item-link" href="#">Мелорин</a></li>
@@ -119,7 +119,67 @@
       
       <section class="filter-catalog">
         <h2 class="visually-hidden">Фильтр товара</h2>
-        <!-- Здесь будет форма -->
+        <form action="#" class="filter" method="GET">
+
+          <div class="">Сортировка:</div>
+          <div class="">
+            <select name="sorting" id="sorting-id">
+              <option value="popular" class="sorting-item">по популярности</option>
+            </select>
+          </div>
+          
+          <div class="">Цена:</div>
+          
+          <div class="">Жирность:</div>
+          <div class="">
+            <ul class="fat">
+              <li class="fat-item">
+                <input type="radio" id="fat-item-zero" name="fat-item-name" value="zero">
+                <label for="fat-item-zero">0%</label>
+              </li>
+              <li class="fat-item">
+                <input type="radio" id="fat-item-ten" name="fat-item-name" value="ten" checked>
+                <label for="fat-item-ten">до 10%</label>
+              </li>
+              <li class="fat-item">
+                <input type="radio" id="fat-item-thirty" name="fat-item-name" value="thirty">
+                <label for="fat-item-thirty">до 30%</label>
+              </li>
+              <li class="fat-item">
+                <input type="radio" id="fat-item-more" name="fat-item-name" value="more">
+                <label for="fat-item-more">выше 30%</label>
+              </li>
+            </ul>
+          </div>
+
+          
+          <div class="">Наполнители:</div>
+          <div class="">
+            <ul class="fillers">
+              <li class="fillers-item">
+                <input type="checkbox" id="filters-item-choco" name="filters-item-name" value="choco" checked>
+                <label for="filters-item-choco">шоколадные</label>
+              </li>
+              <li class="fillers-item">
+                <input type="checkbox" id="filters-item-sugar" name="filters-item-name" value="sugar" checked>
+                <label for="filters-item-sugar">сахарные присыпки</label>
+              </li>
+              <li class="fillers-item">
+                <input type="checkbox" id="filters-item-fruit" name="filters-item-name" value="fruit">
+                <label for="filters-item-fruit">фрукты</label>
+              </li>
+              <li class="fillers-item">
+                <input type="checkbox" id="filters-item-syrup" name="filters-item-name" value="syrup">
+                <label for="filters-item-syrup">сиропы</label>
+              </li>
+              <li class="fillers-item">
+                <input type="checkbox" id="filters-item-jam" name="filters-item-name" value="jam">
+                <label for="filters-item-jam">джемы</label>
+              </li>
+            </ul>
+          </div>
+          <button class="button-filter" type="submit">Применить</button>
+        </form>
       </section>
 
       <section class="catalog">
@@ -440,6 +500,6 @@
 
   </div>
 </footer>
-          
+    </div> 
   </body>
 </html>
