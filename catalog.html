@@ -125,18 +125,20 @@
 
             <fieldset class="field-area">
               <legend class="field-name">Сортировка:</legend>
-                <select name="sorting" id="sorting-id">
-                  <option value="popularity" class="sorting-item">по популярности</option>
-                  <option value="inexpensive" class="sorting-item">сначала недорогие</option>
-                  <option value="expensive" class="sorting-item">сначала дорогие</option>
-                  <option value="fat-content" class="sorting-item">по жирности</option>
-                </select>
+                <div class="sorting-select-wrapper">
+                  <select class="sorting-select" name="sorting" id="sorting-id">
+                    <option value="popularity" class="sorting-item" selected>по популярности</option>
+                    <option value="inexpensive" class="sorting-item">сначала недорогие</option>
+                    <option value="expensive" class="sorting-item">сначала дорогие</option>
+                    <option value="fat-content" class="sorting-item">по жирности</option>
+                  </select>
+                </div>
             </fieldset>
 
             <fieldset class="field-area">
               <legend class="field-name">Цена:
                 <label class="min-price">
-                  <input class="price" type="text" value="100" name="min-price">руб. - 
+                  <input class="price" type="text" value="100" name="min-price">руб. - &nbsp;
                 </label>
                 <label class="max-price">
                   <input class="price" type="text" value="500" name="max-price">руб.
@@ -199,7 +201,7 @@
                     </ul>
                   </fieldset>
         
-                  <input type="submit" class="button-filter" value="Применить">
+                  <button class="button-filter" type="submit">Применить</button>
       
         
       </div>
@@ -226,6 +228,7 @@
               </h3>
             </a>
             <button class="button-gl button-item">Быстрый просмотр</button>
+            <div class="catalog-item-background"></div>
           </li>   
 
           <li class="catalog-item">
@@ -242,6 +245,7 @@
                 </h3>
               </a>
             <button class="button-gl button-item">Быстрый просмотр</button>
+            <div class="catalog-item-background"></div>
           </li>  
 
           <li class="catalog-item">
@@ -258,6 +262,7 @@
                 </h3>
               </a>
             <button class="button-gl button-item">Быстрый просмотр</button>
+            <div class="catalog-item-background"></div>
           </li>
 
           <li class="catalog-item">
@@ -275,6 +280,7 @@
               </a>
               <div class="catalog-item-hover"></div>
             <button class="button-gl button-item">Быстрый просмотр</button>
+            <div class="catalog-item-background"></div>
           </li>
 
           <li class="catalog-item">
@@ -291,6 +297,7 @@
               </h3>
             </a>
             <button class="button-gl button-item">Быстрый просмотр</button>
+            <div class="catalog-item-background"></div>
           </li>
 
           <li class="catalog-item">
@@ -307,6 +314,7 @@
               </h3>
             </a>
             <button class="button-gl button-item">Быстрый просмотр</button>
+            <div class="catalog-item-background"></div>
           </li> 
 
           <li class="catalog-item">
@@ -323,6 +331,7 @@
               </h3>
             </a>
             <button class="button-gl button-item">Быстрый просмотр</button>
+            <div class="catalog-item-background"></div>
           </li>
 
           <li class="catalog-item">
@@ -339,6 +348,7 @@
               </h3>
             </a>
             <button class="button-gl button-item">Быстрый просмотр</button>
+            <div class="catalog-item-background"></div>
           </li>
 
           <li class="catalog-item">
@@ -355,6 +365,7 @@
               </h3>
             </a>
             <button class="button-gl button-item">Быстрый просмотр</button>
+            <div class="catalog-item-background"></div>
           </li>
 
           <li class="catalog-item">
@@ -371,6 +382,7 @@
               </h3>
             </a>
             <button class="button-gl button-item">Быстрый просмотр</button>
+            <div class="catalog-item-background"></div>
           </li>
 
           <li class="catalog-item">
@@ -387,6 +399,7 @@
               </h3>
             </a>
             <button class="button-gl button-item">Быстрый просмотр</button>
+            <div class="catalog-item-background"></div>
           </li> 
 
           <li class="catalog-item">
@@ -403,6 +416,7 @@
               </h3>
             </a>
             <button class="button-gl button-item">Быстрый просмотр</button>
+            <div class="catalog-item-background"></div>
           </li> 
         </ul>
       </section>
