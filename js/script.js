@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/style.min.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
   </head>
   <body>
     <input class="visually-hidden radio-1" type="radio" id="product-1" name="toggle" checked>
@@ -155,7 +155,7 @@
             
             <li class="hits-item">
               <a class="hits-item-image" href="product-1.html" title="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                <img class="item-image" src="img/product-1.png" width="270" height="270" 
+                <img src="img/product-1.png" width="270" height="270" 
                   alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               </a>
               <p class="hits-item-price">
@@ -175,7 +175,7 @@
 
             <li class="hits-item">
               <a class="hits-item-image" href="product-2.html" title="Сливочно-кофейное с кусочками шоколада">
-                <img class="item-image" src="img/product-2.png" width="270" height="270" 
+                <img src="img/product-2.png" width="270" height="270" 
                   alt="Сливочно-кофейное с кусочками шоколада">
               </a>
               <p class="hits-item-price">
@@ -195,7 +195,7 @@
 
             <li class="hits-item">
               <a class="hits-item-image" href="product-3.html" title="Сливочно-клубничное с присыпкой из белого шоколада">
-                <img class="item-image" src="img/product-3.png" width="270" height="270" 
+                <img src="img/product-3.png" width="270" height="270" 
                   alt="Сливочно-клубничное с присыпкой из белого шоколада">
               </a>
               <p class="hits-item-price">
@@ -215,7 +215,7 @@
 
             <li class="hits-item">
               <a class="hits-item-image" href="product-4.html" title="Сливочное крем-брюле с карамельной подливкой">
-                <img class="item-image" src="img/product-4.png" width="270" height="270" 
+                <img src="img/product-4.png" width="270" height="270" 
                   alt="Сливочное крем-брюле с карамельной подливкой">
               </a>
               <p class="hits-item-price">
@@ -318,37 +318,12 @@
                   <span class="adress-normal">(с 10 до 20 ежедневно)</span>
                 </li>
                 <li class="adress">
-                  <a class="map-feedback button-gl" href="#modal-feedback" title="Форма обратной связи">Форма обратной связи</a>
+                  <a class="map-feedback button-gl" href="feedback.html" title="Форма обратной связи">Форма обратной связи</a>
                 </li>
               </ul>
             </div>
           </div>
         </section>
-        <!--POPAP main-->
-        <div class="feedback-field" id="modal-feedback">
-          <a href="#close" class="feedback-close">Закрыть</a>
-          <form class="feedback-form" action="URL" method="POST">
-            <p class="feedback-answer">Мы обязательно вам ответим!</p>
-            <p class="feedback-item">
-              <label class="visually-hidden" for="feedback-name">Как вас зовут?</label>
-              <input class="feedback-area" type="text" id="feedback-name" 
-              name="name" value="" placeholder="Как вас зовут?">
-            </p>
-            <p class="feedback-item">
-              <label class="visually-hidden" for="feedback-email">Ваша почта для ответа?</label>
-              <input class="email-area" type="text" id="feedback-email" 
-              name="email" value="" placeholder="Ваша почта для ответа?">
-            </p>
-            <p class="feedback-item">
-              <label class="visually-hidden" for="feedback-textarea">Напишите что-нибудь</label>
-              <textarea class="feedback-textarea" id="feedback-textarea" placeholder="Напишите что-нибудь..." rows="5"
-              name="feedback"></textarea>
-            </p>
-            <div class="feedback-wrapper">
-              <button class="button-gl button-feedback" type="submit">Отправить</button>
-            </div>
-          </form>
-        </div>
       </main>
 <!--FOOTER-->
       <footer class="main-footer main-container">
