@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/style.min.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
   </head>
   <body>
     <input class="visually-hidden radio-1" type="radio" id="product-1" name="toggle" checked>
@@ -301,7 +301,8 @@
           <h2 class="visually-hidden">Как добраться</h2>
           <div class="map-wrapper">
             <p class="map-image-container">
-              <iframe src="https://goo.gl/maps/V9bGSCEywf2RRgSw6" class="map-frame"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858715867313!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1561656496486!5m2!1sru!2sru" class="map-frame" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <!-- <img class="map-image" src="img/map.jpg" width="1302" height="430" alt="Офис компании по адресу: ул. Большая Конюшенная 19/8, Санкт-Петербург"> -->
             </p>
             <div class="map-list-wrapper main-container">
               <ul class="map-adress">
@@ -315,17 +316,19 @@
                   <span class="adress-normal">(с 10 до 20 ежедневно)</span>
                 </li>
                 <li class="adress">
-                  <a class="map-feedback button-gl" href="#modal-window" title="Форма обратной связи">Форма обратной связи</a>
+                  <a class="map-feedback button-gl map-modal" href="#modal-window" title="Форма обратной связи">Форма обратной связи</a>
                 </li>
               </ul>
             </div>
           </div>
         </section>
         <!--POPAP main-->
-        <a href="#x" class="overlay" id="modal-window"></a>
+        <!-- <a href="#x" class="overlay" id="modal-window"></a> -->
+        <div class="overlay">
+        
         <div class="feedback-field" id="modal-feedback">
-          <!-- <button class="feedback-close" type="button"></button> -->
-          <a href="#close" class="feedback-close">Закрыть</a>
+          <button class="feedback-close" type="button"></button>
+          <!-- <a href="#close" class="feedback-close">Закрыть</a> -->
           <form class="feedback-form" action="URL" method="POST">
             <p class="feedback-answer">Мы обязательно вам ответим!</p>
             <p class="feedback-item">
@@ -347,7 +350,7 @@
               <button class="button-gl button-feedback" type="submit">Отправить</button>
             </div>
           </form>
-        </div>
+        </div></div>
       </main>
 <!--FOOTER-->
       <footer class="main-footer main-container">

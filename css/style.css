@@ -845,6 +845,7 @@ img {
 /* SLIDER______________________________________________________ */
 .slider {
     position: relative;
+    z-index: 1;
     padding-top: 274px;
     padding-bottom: 40px;
     text-align: center;
@@ -1494,33 +1495,49 @@ img {
 }
 /* MAIN end */
 /* MAIN popap start */
-.overlay {
+@keyframes bounce {
+    0% { opacity: 0;
+      transform: scale(.3); }
+    50% { opacity: 1;
+      transform: scale(1.05); }
+    70% { transform: scale(.9); }
+    100% { transform: scale(1); }
+  }
+@keyframes pulse {
+    0% { transform: scale(1); } 
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+@keyframes shake {
+    0% { transform: translateX(0%); }`
+    15% { transform: translateX(-15%) rotate(-5deg); }
+    30% { transform: translateX(12%) rotate(3deg); }
+    45% { transform: translateX(-9%) rotate(-3deg); }
+    60% { transform: translateX(6%) rotate(2deg); }
+    75% { transform: translateX(-3%) rotate(-1deg); }
+    100% { transform: translateX(0%); }
+  }
+ .overlay {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 15;
+    display: none;
     background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    visibility: hidden;
     cursor: default;
-    -o-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-}   
-.overlay:target {
-    visibility: visible;
-    opacity: 1;
+}  
+.overlay-show {
+    display: block;
 }
 .feedback-field {
     position: fixed;
-    top: 0;
+    top: 30%;
     right: 0;
     left: 0;
     z-index: 16;
-    display: block;
+    display: none;
     margin: 0 auto;
     padding: 16px 25px 27px 25px;
     width: 428px;
@@ -1531,13 +1548,13 @@ img {
     color: #323232;
     background-color: #f8f7f4;
     border-radius: 10px;
-    visibility: hidden;
-    opacity: 0;
 }
-.overlay:target + .feedback-field {
-    top: 20%; 
-    visibility: visible;
-    opacity: 1;
+.modal-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+.modal-error {
+    animation: shake 0.3s;
 }
 .feedback-close {
     position: absolute;
