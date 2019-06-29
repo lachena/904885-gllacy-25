@@ -167,12 +167,10 @@
 
                 <fieldset class="field-area">
                   <legend class="field-name">Цена:
-                    <label class="min-price">
-                      <input class="price" type="text" value="100" name="min-price">руб. -&nbsp;
-                    </label>
-                    <label class="max-price">
-                      <input class="price" type="text" value="500" name="max-price">руб.
-                    </label>
+                    <input class="price" type="text" value="100" name="min-price" id="min-price">
+                    <label class="min-price" for="min-price">руб. -&nbsp;</label>
+                    <input class="price" type="text" value="500" name="max-price" id="max-price">
+                    <label class="max-price" for="max-price">руб.</label>
                   </legend>
                   <div class="range-controls">
                     <div class="scale">
@@ -187,19 +185,19 @@
                   <legend class="field-name">Жирность:</legend>
                     <ul class="fat-list">
                       <li class="fat-item">
-                        <input class="fat-item-input visually-hidden disabled" type="radio" id="fat-item-zero" name="fat-item-name" value="zero">
+                        <input class="fat-item-input visually-hidden" type="radio" id="fat-item-zero" name="fat-item-name" value="zero">
                         <label for="fat-item-zero" class="fat-item-point">0%</label>
                       </li>
                       <li class="fat-item">
-                        <input class="fat-item-input visually-hidden disabled" type="radio" id="fat-item-ten" name="fat-item-name" value="ten" checked>
+                        <input class="fat-item-input visually-hidden" type="radio" id="fat-item-ten" name="fat-item-name" value="ten">
                         <label for="fat-item-ten" class="fat-item-point">до 10%</label>
                       </li>
                       <li class="fat-item">
-                        <input class="fat-item-input visually-hidden disabled" type="radio" id="fat-item-thirty" name="fat-item-name" value="thirty">
+                        <input class="fat-item-input visually-hidden" type="radio" id="fat-item-thirty" name="fat-item-name" value="thirty">
                         <label for="fat-item-thirty" class="fat-item-point">до 30%</label>
                       </li>
                       <li class="fat-item">
-                        <input class="fat-item-input visually-hidden disabled" type="radio" id="fat-item-more" name="fat-item-name" value="more">
+                        <input class="fat-item-input visually-hidden" type="radio" id="fat-item-more" name="fat-item-name" value="more">
                         <label for="fat-item-more" class="fat-item-point">выше 30%</label>
                       </li>
                     </ul>
