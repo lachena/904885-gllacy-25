@@ -62,22 +62,18 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-/* ::-webkit-input-placeholder {
-    font-weight: normal;
+::-webkit-input-placeholder {
     color: #999999;
 }
 ::-moz-placeholder {
-    font-weight: normal;
     color: #999999;
 }
 :-moz-placeholder {
-    font-weight: normal;
     color: #999999;
 }
 :-ms-input-placeholder {
-    font-weight: normal;
     color: #999999;
-} */
+}
 /* HEADER start */
 .main-logo {
     min-width: 171px;
@@ -635,7 +631,6 @@ img {
  .search-area:hover {
     font-family: "Roboto";
     font-size: 14px;
-    font-weight: normal;
     background-color: #ffffff;
     -webkit-box-shadow: 0 0 0 1px rgba(154, 154, 154, 0.52);
             box-shadow: 0 0 0 1px rgba(154, 154, 154, 0.52);
@@ -643,8 +638,7 @@ img {
 .search-area:focus {
     font-family: "Roboto";
     font-size: 14px;
-    font-weight: normal;
-    color: black;
+    color: #999999;
     background-color: #ffffff;
     border: solid 1px rgba(46, 136, 228, 0.52);
     -webkit-box-shadow: 0 0 0 1px rgba(46, 136, 228, 0.52);
@@ -765,7 +759,6 @@ img {
 .data-area:hover {
     font-family: "Roboto";
     font-size: 14px;
-    font-weight: normal;
     background-color: #ffffff;
     -webkit-box-shadow: 0 0 0 1px rgba(154, 154, 154, 0.52);
             box-shadow: 0 0 0 1px rgba(154, 154, 154, 0.52);
@@ -773,8 +766,7 @@ img {
 .data-area:focus {
     font-family: "Roboto";
     font-size: 14px;
-    font-weight: normal;
-    color: black;
+    color: #999999;
     background-color: #ffffff;
     border: solid 1px rgba(46, 136, 228, 0.52);
     -webkit-box-shadow: 0 0 0 1px rgba(46, 136, 228, 0.52);
@@ -1389,7 +1381,6 @@ img {
 .appointment-area:focus {
     font-family: "Roboto";
     font-size: 16px;  
-    /* font-weight: normal; */
 }
 .appointment-area:hover {
     background-color: #ffffff;
@@ -1397,7 +1388,7 @@ img {
             box-shadow: 0 0 0 1px rgba(154, 154, 154, 0.52);
 }
 .appointment-area:focus {
-    color: black;
+    color: #999999;
     background-color: #ffffff;
     border: solid 1px rgba(46, 136, 228, 0.52);
     -webkit-box-shadow: 0 0 0 1px rgba(46, 136, 228, 0.52);
@@ -1771,7 +1762,6 @@ img {
 .feedback-textarea:hover {
     font-family: "Roboto";
     font-size: 16px;
-    font-weight: normal;
     background-color: #ffffff;
     -webkit-box-shadow: 0 0 0 1px rgba(154, 154, 154, 0.52);
             box-shadow: 0 0 0 1px rgba(154, 154, 154, 0.52);
@@ -1781,8 +1771,7 @@ img {
 .feedback-textarea:focus {
     font-family: "Roboto";
     font-size: 16px;
-    font-weight: normal;
-    color: black;
+    color: #999999;
     background-color: #ffffff;
     border: solid 1px rgba(46, 136, 228, 0.52);
     outline: none;
@@ -2450,9 +2439,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 17px 0 30px 0;
@@ -2474,9 +2461,7 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 185px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding-top: 15px;
 }
 .social-space {
     margin: 0;
@@ -2497,9 +2482,7 @@ img {
 /* __________________________________________________________ */
 .contacts {
     width: calc(100% - 374px);
-    -ms-flex-item-align: baseline;
-        align-self: baseline;
-    padding-top: 11px;
+    padding-top: 6px;
 }
 .contacts-link-wrapper {
     display: -webkit-box;
