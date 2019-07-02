@@ -62,18 +62,22 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-::-webkit-input-placeholder {
+/* ::-webkit-input-placeholder {
     font-weight: normal;
+    color: #999999;
 }
 ::-moz-placeholder {
     font-weight: normal;
+    color: #999999;
 }
 :-moz-placeholder {
     font-weight: normal;
+    color: #999999;
 }
 :-ms-input-placeholder {
     font-weight: normal;
-}
+    color: #999999;
+} */
 /* HEADER start */
 .main-logo {
     min-width: 171px;
@@ -1131,6 +1135,18 @@ img {
             justify-content: center;
     padding-bottom: 11px;
 }
+.hits-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 12px;
+    z-index: 2;
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/hit.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
 .button-hits {
     content: "";
     position: absolute;
@@ -1368,13 +1384,12 @@ img {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     text-align: left;
-    
 }
 .appointment-area:hover,
 .appointment-area:focus {
     font-family: "Roboto";
     font-size: 16px;  
-    font-weight: normal;
+    /* font-weight: normal; */
 }
 .appointment-area:hover {
     background-color: #ffffff;
@@ -1489,7 +1504,12 @@ img {
     padding-bottom: 2px;
 }
 .map-phone {
-    color: black;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.33;
+    text-align: left;
+    color: #323232;
 }
 .map-image {
     width: 100%;
@@ -1886,8 +1906,8 @@ img {
     padding-bottom: 24px;
 }
 .field-area {
-    -ms-flex-item-align: baseline;
-        align-self: baseline;
+   /*  -ms-flex-item-align: baseline;
+        align-self: baseline; */
     margin: 0;
     padding: 0;
     padding-bottom: 15px;
@@ -2085,7 +2105,7 @@ img {
 .min-price,
 .max-price {
     display: inline-block;
-    vertical-align: baseline;
+    vertical-align: middle;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -2105,9 +2125,7 @@ img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
+    align-items: flex-end;
 }
 .price {
     width: 28px;

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/style.min.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
   </head>
   <body>
     <input class="visually-hidden radio-1" type="radio" id="product-1" name="toggle" checked>
@@ -75,7 +75,7 @@
                       name="password" value="" placeholder="Пароль">
                     </p>
                     <div class="login-linker-wrapper">
-                      <button class="button-gl button-login-link" type="submit">Войти</button>
+                      <button class="button-gl button-login-link" type="submit" title="Войти">Войти</button>
                       <ul class="login-linker">
                         <li class="login-linker-item"><a class="restore" href="forget-password.html" title="Забыли пароль">Забыли пароль?</a></li>
                         <li class="login-linker-item"><a class="new-registration" href="new-reg.html" title="Новая регистрация">Новая регистрация</a></li>
@@ -172,10 +172,7 @@
                   Сливочное с апельсиновым джемом и цитрусовой стружкой
                 </h3>
               </a>
-              <p class="hits-img-hit">
-                <img src="img/hit.svg" alt="Хит" class="img-hit" width="61" height="61">
-              </p>
-              <button class="button-gl button-hits">Быстрый просмотр</button>
+              <button class="button-gl button-hits" title="Быстрый просмотр">Быстрый просмотр</button>
             </li>
 
             <li class="hits-item">
@@ -191,10 +188,7 @@
                   Сливочно-кофейное с кусочками шоколада
                 </h3>
               </a>
-              <p class="hits-img-hit">
-                  <img src="img/hit.svg" alt="Хит" class="img-hit" width="61" height="61">
-              </p>
-              <button class="button-gl button-hits">Быстрый просмотр</button>
+              <button class="button-gl button-hits" title="Быстрый просмотр">Быстрый просмотр</button>
             </li>
 
             <li class="hits-item">
@@ -210,10 +204,7 @@
                   Сливочно-клубничное с присыпкой из белого шоколада
                 </h3>
               </a>
-              <p class="hits-img-hit">
-                  <img src="img/hit.svg" alt="Хит" class="img-hit" width="61" height="61">
-              </p>
-              <button class="button-gl button-hits">Быстрый просмотр</button>
+              <button class="button-gl button-hits" title="Быстрый просмотр">Быстрый просмотр</button>
             </li>
 
             <li class="hits-item">
@@ -229,10 +220,7 @@
                   Сливочное крем-брюле с карамельной подливкой
                 </h3>
               </a>
-              <p class="hits-img-hit">
-                  <img src="img/hit.svg" alt="Хит" class="img-hit" width="61" height="61">
-              </p>
-              <button class="button-gl button-hits">Быстрый просмотр</button>
+              <button class="button-gl button-hits" title="Быстрый просмотр">Быстрый просмотр</button>
             </li>
           </ul>
         </section>
@@ -289,7 +277,7 @@
                     <input class="appointment-area" id="appointment-email" type="text" 
                     name="email" value="" placeholder="Электронная почта">
                   </p>
-                  <button class="button-gl button-email" type="submit">Отправить</button>
+                  <button class="button-gl button-email" type="submit" title="Отправить">Отправить</button>
                 </form>
               </div>
             </div>
@@ -310,7 +298,7 @@
                 </li>
                 <li class="adress">
                   <span class="adress-normal">Для заказов по телефону:</span>
-                  <span class="adress-bold"><a class="map-phone" href="tel:88124502525" title="Телефон">8 812 450-25-25</a></span>
+                  <a class="map-phone" href="tel:88124502525" title="Телефон">8 812 450-25-25</a>
                   <span class="adress-normal">(с 10 до 20 ежедневно)</span>
                 </li>
                 <li class="adress">
@@ -323,7 +311,7 @@
         <!--POPAP main-->
         <div class="overlay">
           <div class="feedback-field" id="modal-feedback">
-            <button class="feedback-close" type="button"></button>
+            <button class="feedback-close" type="button" title="Закрыть"></button>
             <form class="feedback-form" action="URL" method="POST">
               <p class="feedback-answer">Мы обязательно вам ответим!</p>
               <p class="feedback-item">
@@ -342,7 +330,7 @@
                 name="feedback"></textarea>
               </p>
               <div class="feedback-wrapper">
-                <button class="button-gl button-feedback" type="submit">Отправить</button>
+                <button class="button-gl button-feedback" type="submit" title="Отправить">Отправить</button>
               </div>
             </form>
           </div>
