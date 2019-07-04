@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="site-wrapper site-wrapper-catalog">
@@ -21,7 +21,7 @@
           <div class="main-menu-wrapper">
             <nav class="main-navigation">
               <ul class="site-navigation">
-                <li class="site-navigation-item"><a href="catalog-list.html" class="site-navigation-current site-navigation-link site-navigation-catalog">Каталог</a>
+                <li class="site-navigation-item"><a href="catalog-list.html" class="site-navigation-current site-navigation-link site-navigation-catalog" title="Каталог">Каталог</a>
                   <ul class="navigation-list ">
                     <li class="navigation-item navigation-item-first"><a class="navigation-item-link" href="new.html" title="Новинки">Новинки</a></li>
                     <li class="navigation-item"><a class="navigation-item-link navigation-item-link-current" href="#" title="Сливочное">Сливочное</a></li>
@@ -140,8 +140,8 @@
         <div class="catalog-wrapper main-container">
           <div class="breadcrumbs-wrapper"> 
             <ul class="breadcrumbs">
-              <li class="breadcrumbs-item"><a class="breadcrumbs-menu breadcrumbs-main" href="index.html">Главная</a></li>
-              <li class="breadcrumbs-item"><a class="breadcrumbs-menu breadcrumbs-catalog" href="catalog-list.html">Каталог</a></li>
+              <li class="breadcrumbs-item"><a class="breadcrumbs-menu breadcrumbs-main" href="index.html" title="Главная">Главная</a></li>
+              <li class="breadcrumbs-item"><a class="breadcrumbs-menu breadcrumbs-catalog" href="catalog-list.html" title="Каталог">Каталог</a></li>
               <li class="breadcrumbs-current breadcrumbs-item breadcrumbs-icecream">Сливочное</li>
             </ul>
           </div>
@@ -167,10 +167,10 @@
 
                 <fieldset class="field-area">
                   <legend class="field-name">Цена:
-                    <input class="price" type="text" value="100" name="min-price" id="min-price">
-                    <label class="min-price" for="min-price">руб. -&nbsp;</label>
-                    <input class="price" type="text" value="500" name="max-price" id="max-price">
-                    <label class="max-price" for="max-price">руб.</label>
+                    <input class="price" type="text" value="100" name="min-price" id="min-price" aria-label="Минимальная цена">
+                    <label class="min-price" for="min-price" aria-label="Валюта минимальной цены">руб. -&nbsp;</label>
+                    <input class="price" type="text" value="500" name="max-price" id="max-price" aria-label="Максимальная цена">
+                    <label class="max-price" for="max-price" aria-label="Валюта максимальной цены">руб.</label>
                   </legend>
                   <div class="range-controls">
                     <div class="scale">
@@ -509,10 +509,10 @@
 
           <div class="contacts">
             <ul class="contacts-link-wrapper">
-              <li class="contacts-link-item"><a class="contacts-link" href="for-deliveres.html">Для поставщиков</a></li>
-              <li class="contacts-link-item"><a class="contacts-link" href="documents.html">Наши документы</a></li>
-              <li class="contacts-link-item"><a class="contacts-link" href="about-us.html">О производстве</a></li>
-              <li class="contacts-link-item"><a class="contacts-link" href="eco-standarts.html">Экологические стандарты</a></li>
+              <li class="contacts-link-item"><a class="contacts-link" href="for-deliveres.html" title="Для поставщиков">Для поставщиков</a></li>
+              <li class="contacts-link-item"><a class="contacts-link" href="documents.html" title="Наши документы">Наши документы</a></li>
+              <li class="contacts-link-item"><a class="contacts-link" href="about-us.html" title="О производстве">О производстве</a></li>
+              <li class="contacts-link-item"><a class="contacts-link" href="eco-standarts.html" title="Экологические стандарты">Экологические стандарты</a></li>
             </ul>
           </div>
 
