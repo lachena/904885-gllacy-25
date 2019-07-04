@@ -1895,8 +1895,6 @@ img {
     padding-bottom: 24px;
 }
 .field-area {
-   /*  -ms-flex-item-align: baseline;
-        align-self: baseline; */
     margin: 0;
     padding: 0;
     padding-bottom: 15px;
@@ -2002,7 +2000,7 @@ img {
 }
 .fat-item:last-child,
 .fillers-item:last-child {
-    margin-right: 0px;
+    margin-right: 0;
 }
 .fat-item-point,
 .fillers-item-point {
